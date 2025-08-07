@@ -7,110 +7,105 @@
 <style>
   @page {
     size: A4;
-    margin: 15mm; 
+    margin: 12mm;
   }
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 750px;
-    margin: 1.5rem auto 3rem auto;
+    max-width: 730px;
+    margin: 1rem auto;
     color: #222;
-    line-height: 1.25; 
+    line-height: 1.2;
     background: white;
-    font-size: 0.85rem; 
+    font-size: 0.78rem;
   }
   h1, h2 {
-    margin-bottom: 0.15rem;
+    margin: 0.2rem 0 0.2rem;
     color: #111;
   }
   h1 {
-    font-size: 1.8rem;
-    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
   h2 {
-    font-size: 1.1rem;
-        margin-top: 0.4rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.1rem;
   }
   p, ul {
-    margin: 0.15rem 0 0.5rem 0;
-    font-size: 0.85rem;
+    margin: 0.15rem 0 0.4rem 0;
+    font-size: 0.78rem;
   }
   ul {
     padding-left: 1.1rem;
   }
   li {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.15rem;
   }
 
-  .top{
-    text-align: center;;
+  .top {
+    text-align: center;
+    margin-bottom: 0.6rem;
   }
   .contact {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+    font-size: 0.75rem;
     color: #444;
     line-height: 1.1;
   }
   .section {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
   }
   .projects > h3 {
     margin-bottom: 0.1rem;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   .projects p.tech {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-style: italic;
     color: #666;
     margin-top: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.25rem;
   }
   p.minimal {
     margin: 0.1rem 0;
   }
- 
+
   #downloadBtn {
     display: inline-block;
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.9rem;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem 0.7rem;
     background-color: #444;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
   }
   #downloadBtn:hover {
     background-color: #222;
   }
-  /* Hide button when printing */
   @media print {
     #downloadBtn {
       display: none;
     }
   }
-
   @media (max-width: 768px) {
     body {
-        margin: 10px 20px;
+      margin: 10px 20px;
     }
   }
 </style>
-
 </head>
 <body>
 
 <a href="Oleg_Makarov_Resume.pdf" download="Oleg_Makarov_Resume.pdf" id="downloadBtn">Download PDF</a>
 
-
-
 <div class="section top">
-<h1>Oleg Makarov</h1>
-<div class="contact">
-  React Frontend Developer -  Batumi, Georgia · olegmakarovach.job@gmail.com · +995 557 66 44 69<br />
-  <a href="https://www.linkedin.com/in/olegacat" target="_blank" style="color:#222; text-decoration:none;">linkedin.com/in/olegacat</a>
-</div>
+  <h1>Oleg Makarov</h1>
+  <div class="contact">
+    React Frontend Developer - Batumi, Georgia · olegmakarovach.job@gmail.com · +995 557 66 44 69<br />
+    <a href="https://www.linkedin.com/in/olegacat" target="_blank" style="color:#222; text-decoration:none;">linkedin.com/in/olegacat</a>
+  </div>
 </div>
 
 <div class="section summary">
@@ -121,70 +116,75 @@
 <div class="section skills">
   <h2>Key Skills</h2>
   <ul>
-    <li><strong>Frontend:</strong> React.js, Next.js, Tailwind, MUI, SASS, Responsive Design, Localization</li>
-    <li><strong>Backend:</strong> Node.js, Supabase, REST APIs</li>
+    <li><strong>Frontend:</strong> React.js, Next.js (App Router, SSR, ISR), Tailwind CSS, MUI, SASS, Responsive UI, i18n (Localization), Drag & Drop</li>
+    <li><strong>State Management:</strong> Redux Toolkit, Zustand, React Query (TanStack), SWR, Context API</li>
+    <li><strong>Backend:</strong> Node.js, Supabase (Edge Functions, Auth), REST API, Socket.IO, PHP (basic), API Routes</li>
     <li><strong>Databases:</strong> PostgreSQL (Supabase), MongoDB, MySQL</li>
-    <li><strong>Others:</strong> TypeScript, Git, OTP & Email Integration, Payment Systems, Deployment</li>
+    <li><strong>Dev Tools:</strong> TypeScript, Git, ESLint & Prettier, Vite, Webpack, CI/CD basics</li>
+    <li><strong>Integrations:</strong> Email & OTP Auth, Payment Systems, File Uploads, Google Maps</li>
+    <li><strong>Deployment:</strong> Vercel, Docker (basics)</li>
   </ul>
 </div>
 
 <div class="section experience">
   <h2>Experience</h2>
-
-  <h3>GeexArt - React Developer <small>(Jun 2024 – Present, Remote)</small></h3>
+  <h3>GeexArt – React Developer <small>(Jun 2024 – Present)</small></h3>
   <ul>
-    <li>Enhanced SportRec sports platform with user registration, ticketing, and calendar features</li>
-    <li>Collaborated closely with backend developers to deliver full features</li>
-    <li>Implemented multilingual UI using MUI, Tailwind, and i18n</li>
+    <li>Enhanced SportRec platform with registration, ticketing, calendar features</li>
+    <li>Collaborated with backend developers for full feature delivery</li>
+    <li>Implemented multilingual UI using MUI, Tailwind, i18n</li>
   </ul>
-
-  <h3>DaBankrot - Frontend Developer <small>(2024, Remote)</small></h3>
+  <h3>DaBankrot – Web Developer <small>(2024)</small></h3>
   <ul>
-    <li>Developed a fast, responsive landing page based on UI/UX designs</li>
+    <li>Developed responsive website based on UI/UX designs using Modx, php, js</li>
+  </ul>
+  <h3>Freelance Projects – Fullstack Developer <small>(2022 – Present)</small></h3>
+  <ul>
+    <li>React & Next.js apps for businesses/startups</li>
+    <li>Built admin panels, calculators, auth flows</li>
+    <li>Used Supabase, Node.js, MongoDB, PHP for backends</li>
+    <li>Worked with international clients on MVPs & feedback</li> 
   </ul>
 </div>
 
 <div class="section projects">
-  <h2>Selected Projects</h2>
+  <h2>Selected Projects (2022–2025)</h2>
 
-  <h3>Beautify - Beauty Video Marketplace</h3>
-  <p class="tech">React.js, Node.js, Supabase, OTP, Payments</p>
+  <h3>String Ring – Portrait Generation (2025)</h3>
+  <p class="tech">React, Tailwind, TypeScript, Supabase, AI</p>
   <ul>
-    <li>Built TikTok-style video marketplace with booking and shop system</li>
-    <li>Bilingual UI (Arabic & English), domain setup, and email automation</li>
-    <li>Led frontend and contributed backend</li>
+    <li>Front-end for AI-based portrait creation with image upload and dynamic previews</li>
   </ul>
 
-  <h3>SportRec - Sports Management Platform</h3>
-  <p class="tech">React.js, Node.js, MySQL, MUI, Email Integration</p>
+  <h3>Beautify – Video Marketplace</h3>
+  <p class="tech">React, Node.js, Supabase, OTP, Payments</p>
   <ul>
-    <li>Admin dashboards, registration, filtering, calendar, ticketing</li>
-    <li>Delivered MVP under tight deadlines with backend collaboration</li>
+    <li>TikTok-style marketplace with booking & shop system</li>
+    <li>Bilingual UI, domain setup, email automation</li>
+    <li>Led frontend, contributed backend</li>
   </ul>
 
-  <h3>SAMU Food Delivery App</h3>
+  <h3>SportRec – Sports Platform</h3>
+  <p class="tech">React, Node.js, MySQL, MUI, Email</p>
+  <ul>
+    <li>Dashboards, registration, filtering, ticketing</li>
+    <li>Delivered MVP under tight deadlines</li>
+  </ul>
+
+  <h3>SAMU – Food Delivery App</h3>
   <p class="tech">React Native, Supabase</p>
   <ul>
-    <li>Real-time frontend with restaurant listings and order tracking</li>
+    <li>Live order tracking, restaurant listings</li>
   </ul>
- 
-  <p class="minimal"><strong>Gym Website:</strong> HTML, CSS, JavaScript - Landing page for classes and coaches.</p>
-  <p class="minimal"><strong>Ad Agency Website:</strong> Vanilla JavaScript - Static site with smooth scrolling.</p>
-  <p class="minimal"><strong>Simple WebSocket Chat:</strong> Node.js, WebSocket, React - Real-time chat with custom styling.</p>
+
+  <p class="minimal"><strong>Gym Site:</strong> HTML/CSS/JS | <strong>Ad Agency:</strong> Vanilla JS | <strong>Chat App:</strong> Node.js, WebSocket, React</p>
 </div>
 
 
-
-<div class="section education">
-  <h2>Education</h2>
-  <p><strong>Moscow Aviation Institute (MAI), Russia</strong> - Developer</p>
+<div class="section other">
+  <h2>Education & Languages</h2>
+  <p><strong>MAI (Moscow Aviation Institute)</strong> – Developer</p>
+  <p><strong>Languages:</strong> Russian (Native), English (C1), Spanish (A2)</p>
 </div>
 
-<div class="section languages">
-  <h2>Languages</h2>
-  <p>Russian - Native, English - C1, Spanish - A2</p>
-</div>
-
-
-</body>
 </html>
